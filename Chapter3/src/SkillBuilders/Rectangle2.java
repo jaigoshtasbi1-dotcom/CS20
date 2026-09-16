@@ -2,7 +2,7 @@ package SkillBuilders;
 
 import java.util.Scanner;
 
-public class Rectangle 
+public class Rectangle2 
 {
 
 	public static void main(String[] args) 
@@ -10,7 +10,8 @@ public class Rectangle
 		//Declaration
 		int length;
 		int width;
-		double area;
+		int area;
+		int p;
 		
 		//Create Scanner Object
 		Scanner userinput = new Scanner(System.in);
@@ -26,11 +27,18 @@ public class Rectangle
 		//Calculate area
 		area = length*width;
 		
-		//Display length, width, and area
+		//Calculate perimeter
+		p = ((2*length)+(2*width));
+		
+		//Display length, width, perimeter and area
 		System.out.println("");
 		System.out.println("The width is: "+width);
 		System.out.println("The length is: "+length);
+		System.out.println("The perimeter is: "+p);
 		System.out.println("The area is: "+area);
+		
+		//close scanner object
+		userinput.close();
 	}
 
 }
