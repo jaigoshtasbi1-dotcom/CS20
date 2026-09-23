@@ -1,3 +1,11 @@
+/*
+
+Program: PlaceValueCalculator.java          Last Date of this Revision: September 22, 2026
+
+Purpose: An application that requests a user inputted number then outputs the digit in the ones, tens, and hundreds place value.
+
+*/
+
 package Mastery;
 
 import java.util.Scanner;
@@ -52,8 +60,8 @@ public class Exercise6
 			{
 				//error messsage if the user did not input an integer
 				System.out.print(red+"Error! Please enter an INTEGER between 1 and 999: "+reset);
-				
 				userinput.next();
+
 				continue;
 			}
 		}
@@ -80,3 +88,12 @@ public class Exercise6
 	}
 
 }
+
+/*
+Please Input An Integer between 1-999: -1
+Error! Please enter an integer between 1 and 999: 452
+
+The number in the hundreds-place is: 4
+The number in the tens-place is: 5
+The number in the ones-place is: 2
+*/
